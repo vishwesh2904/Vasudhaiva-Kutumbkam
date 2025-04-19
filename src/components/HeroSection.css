@@ -1,0 +1,39 @@
+.hero-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 40px;
+    background: #fff;
+  }
+  
+  .hero-image {
+    flex: 1;
+    max-width: 30%;
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease;
+  }
+  
+  .hero-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 15px;
+  }
+  
+  .hero-image:hover {
+    transform: scale(1.05);
+  }
+  
+  @media screen and (max-width: 768px) {
+    .hero-section {
+      flex-direction: column;
+    }
+  
+    .hero-image {
+      max-width: 90%;
+    }
+  }
+  
